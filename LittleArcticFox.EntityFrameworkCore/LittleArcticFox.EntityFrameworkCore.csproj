@@ -3,6 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>欧俊</Authors>
+    <Company>哈尔滨市百氏佳居网络科技有限公司</Company>
+    <Product>小北极狐EFCore</Product>
+    <Version>1.0.0-dev</Version>
+    <Description>一个简单的框架，按道理，不会完善的吧。</Description>
+    <PackageReleaseNotes>临时起意。
+不想负责。
+不想维护。
+随便玩的。
+也许有用。
+没有文档。
+嗯。</PackageReleaseNotes>
+    <PackageTags>asp.netcore,webapi</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using LittleArcticFox.Modules;
+using Microsoft.AspNetCore.Builder;
+using System;
 
 namespace LittleArcticFox.Extensions
 {
@@ -11,8 +13,10 @@ namespace LittleArcticFox.Extensions
         /// 注册LittleArcticFox框架
         /// </summary>
         /// <param name="app"></param>
-        public static void RegisterLittleArcticFox(this IApplicationBuilder app)
+        /// <param name="appActionSetup"></param>
+        public static void RegisterLittleArcticFox(this IApplicationBuilder app, Action<ModuleOptions> appActionSetup = null)
         {
+            appActionSetup?.Invoke(new ModuleOptions());
         }
     }
 }

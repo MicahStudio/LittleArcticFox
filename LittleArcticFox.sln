@@ -20,7 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{45504F71-F6F
 		Publish.txt = Publish.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleArcticFox.EntityFrameworkCore", "LittleArcticFox.EntityFrameworkCore\LittleArcticFox.EntityFrameworkCore.csproj", "{A46C3477-CA91-4FE0-83C3-797B2444B075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleArcticFox.EntityFrameworkCore", "LittleArcticFox.EntityFrameworkCore\LittleArcticFox.EntityFrameworkCore.csproj", "{A46C3477-CA91-4FE0-83C3-797B2444B075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleArcticFox.Module.HelloWorld", "LittleArcticFox.Module.HelloWorld\LittleArcticFox.Module.HelloWorld.csproj", "{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{57678792-1E76-457B-9EE6-48DE93EAD1EC} = {A57D065C-0B06-4649-97DE-68D306F3D1BD}
 		{B274C977-D3E1-4C3F-A165-D87EA67F04D6} = {A57D065C-0B06-4649-97DE-68D306F3D1BD}
 		{A46C3477-CA91-4FE0-83C3-797B2444B075} = {8ACC4A5D-5908-42B7-970C-818A10F6C753}
+		{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454} = {8ACC4A5D-5908-42B7-970C-818A10F6C753}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7651D646-A92A-4D39-B39B-358BA6F0354F}

@@ -1,4 +1,5 @@
-﻿using LittleArcticFox.EntityFrameworkCore.Extensions;
+﻿using LittleArcticFox.EntityFrameworkCore.Entity;
+using LittleArcticFox.EntityFrameworkCore.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

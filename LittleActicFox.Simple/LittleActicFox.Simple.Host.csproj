@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LittleActicFox.Simple.Application\LittleActicFox.Simple.Application.csproj" />
+    <ProjectReference Include="..\LittleArcticFox.Module.HelloWorld\LittleArcticFox.Module.HelloWorld.csproj" />
   </ItemGroup>
 
 </Project>

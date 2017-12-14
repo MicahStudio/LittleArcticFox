@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using LittleArcticFox.Modules;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace LittleArcticFox.Extensions
 {
@@ -11,9 +13,10 @@ namespace LittleArcticFox.Extensions
         /// 注册LittleArcticFox框架
         /// </summary>
         /// <param name="services"></param>
-        public static void RegisterLittleArcticFox(this IServiceCollection services)
+        /// <param name="servicesActionSetup"></param>
+        public static void RegisterLittleArcticFox(this IServiceCollection services, Action<ModuleOptions> servicesActionSetup = null)
         {
-            
+            servicesActionSetup?.Invoke(new ModuleOptions());
         }
     }
 }

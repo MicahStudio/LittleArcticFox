@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using LittleArcticFox.Extensions;
+using LittleArcticFox.Module.HelloWorld.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +28,7 @@ namespace LittleActicFox.Simple
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.RegisterLittleArcticFox(option => option.HelloWorld());
             services.AddMvc();
             services.AddSwaggerGen(c =>
             {
