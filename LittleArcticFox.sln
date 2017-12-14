@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{355BAAF9-993F-4F25-B718-ECF42EE4707A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8ACC4A5D-5908-42B7-970C-818A10F6C753}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleArcticFox.Core", "LittleArcticFox.Core\LittleArcticFox.Core.csproj", "{04DE8C40-3E9F-4FDD-9A0E-AA31D3485BCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{A57D065C-0B06-4649-97DE-68D306F3D1BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleActicFox.Simple.Host", "LittleActicFox.Simple\LittleActicFox.Simple.Host.csproj", "{57678792-1E76-457B-9EE6-48DE93EAD1EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleActicFox.Simple.Application", "LittleActicFox.Simple.Application\LittleActicFox.Simple.Application.csproj", "{B274C977-D3E1-4C3F-A165-D87EA67F04D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{45504F71-F6FC-4D3B-AB38-07B2671B9452}"
+	ProjectSection(SolutionItems) = preProject
+		Publish.txt = Publish.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleArcticFox.EntityFrameworkCore", "LittleArcticFox.EntityFrameworkCore\LittleArcticFox.EntityFrameworkCore.csproj", "{A46C3477-CA91-4FE0-83C3-797B2444B075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04DE8C40-3E9F-4FDD-9A0E-AA31D3485BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DE8C40-3E9F-4FDD-9A0E-AA31D3485BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DE8C40-3E9F-4FDD-9A0E-AA31D3485BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DE8C40-3E9F-4FDD-9A0E-AA31D3485BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57678792-1E76-457B-9EE6-48DE93EAD1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57678792-1E76-457B-9EE6-48DE93EAD1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57678792-1E76-457B-9EE6-48DE93EAD1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57678792-1E76-457B-9EE6-48DE93EAD1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B274C977-D3E1-4C3F-A165-D87EA67F04D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B274C977-D3E1-4C3F-A165-D87EA67F04D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B274C977-D3E1-4C3F-A165-D87EA67F04D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B274C977-D3E1-4C3F-A165-D87EA67F04D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46C3477-CA91-4FE0-83C3-797B2444B075}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8ACC4A5D-5908-42B7-970C-818A10F6C753} = {355BAAF9-993F-4F25-B718-ECF42EE4707A}
+		{04DE8C40-3E9F-4FDD-9A0E-AA31D3485BCB} = {8ACC4A5D-5908-42B7-970C-818A10F6C753}
+		{A57D065C-0B06-4649-97DE-68D306F3D1BD} = {355BAAF9-993F-4F25-B718-ECF42EE4707A}
+		{57678792-1E76-457B-9EE6-48DE93EAD1EC} = {A57D065C-0B06-4649-97DE-68D306F3D1BD}
+		{B274C977-D3E1-4C3F-A165-D87EA67F04D6} = {A57D065C-0B06-4649-97DE-68D306F3D1BD}
+		{A46C3477-CA91-4FE0-83C3-797B2444B075} = {8ACC4A5D-5908-42B7-970C-818A10F6C753}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7651D646-A92A-4D39-B39B-358BA6F0354F}
+	EndGlobalSection
+EndGlobal
