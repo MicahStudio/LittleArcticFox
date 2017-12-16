@@ -1,4 +1,5 @@
 ﻿using LittleArcticFox.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,16 +11,17 @@ namespace LittleActicFox.Simple.Application.AppServices
     /// <summary>
     /// 
     /// </summary>
-    public class AppSimple : AppService
+    public class AppSimple : MyBaseApplication, IAppSimple
     {
         /// <summary>
         /// 测试用的方法
         /// </summary>
         /// <returns>一个字符串</returns>
         [HttpGet]
-        public Task<string> GetString()
+        //[Authorize]
+        public async Task<string> GetString()
         {
-            return Task.FromResult("Hello Little Actic Fox.");
+            return await Task.FromResult(ApplicationName);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace LittleArcticFox.Core
     [Route("api/[controller]/[action]")]
     public abstract class AppService : Controller
     {
+        //private readonly 
         /// <summary>
         /// 
         /// </summary>

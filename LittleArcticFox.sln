@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{355BAAF9-993F-4F25-B718-ECF42EE4707A}"
 EndProject
@@ -18,11 +18,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{45504F71-F6FC-4D3B-AB38-07B2671B9452}"
 	ProjectSection(SolutionItems) = preProject
 		Publish.txt = Publish.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleArcticFox.EntityFrameworkCore", "LittleArcticFox.EntityFrameworkCore\LittleArcticFox.EntityFrameworkCore.csproj", "{A46C3477-CA91-4FE0-83C3-797B2444B075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleArcticFox.Module.HelloWorld", "LittleArcticFox.Module.HelloWorld\LittleArcticFox.Module.HelloWorld.csproj", "{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleArcticFox.Module.HelloWorld", "LittleArcticFox.Module.HelloWorld\LittleArcticFox.Module.HelloWorld.csproj", "{6ACAFA87-5A5C-4DFB-A367-E725B8DBB454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
