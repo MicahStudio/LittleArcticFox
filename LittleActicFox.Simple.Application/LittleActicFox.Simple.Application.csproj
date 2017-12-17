@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LittleActicFox.Simple.Core\LittleActicFox.Simple.Core.csproj" />
     <ProjectReference Include="..\LittleArcticFox.Core\LittleArcticFox.Core.csproj" />
   </ItemGroup>
 

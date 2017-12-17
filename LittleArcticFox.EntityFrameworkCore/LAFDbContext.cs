@@ -11,7 +11,7 @@ namespace LittleArcticFox.EntityFrameworkCore
     /// <summary>
     /// DbContext的基类
     /// </summary>
-    public abstract class LAFDbContext: DbContext
+    public abstract class LAFDbContext : DbContext
     {
         /// <summary>
         /// 
@@ -67,7 +67,7 @@ namespace LittleArcticFox.EntityFrameworkCore
                         {
                             entity.State = EntityState.Modified;
                             entity.CurrentValues["IsDeleted"] = true;
-                            entity.CurrentValues["DeletionTime"] = DateTime.Now;
+                            //entity.CurrentValues["DeletionTime"] = DateTime.Now;
                             break;
                         }
                 }

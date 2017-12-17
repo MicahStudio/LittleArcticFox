@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using LittleActicFox.Simple.EntityFrameworkCore;
+using LittleArcticFox.EntityFrameworkCore.Extensions;
 using LittleArcticFox.Extensions;
 using LittleArcticFox.Module.HelloWorld.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -28,8 +31,9 @@ namespace LittleActicFox.Simple
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.RegisterLittleArcticFox(option => option.HelloWorld());
+            services.RegisterLittleArcticFox(option => option.AddEFCore<SimpleDbContext>(services).HelloWorld());
             services.AddMvc();
+            services.AddDbContext<SimpleDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("Default")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });

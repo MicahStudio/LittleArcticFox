@@ -38,12 +38,51 @@ namespace LittleArcticFox.EntityFrameworkCore.Repositories
         /// 增加一条记录
         /// </summary>
         /// <param name="entity"></param>
-        public void Instert(TEntity entity) => Table.Add(entity);
+        public void Instert(TEntity entity)
+        {
+            Table.Add(entity);
+            _dbContext.SaveChanges();
+        }
         /// <summary>
         /// 增加一条记录
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public Task InstertAsync(TEntity entity) => Table.AddAsync(entity);
+        public async Task InstertAsync(TEntity entity)
+        {
+            await Table.AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public void Delete(TEntity entity)
+        {
+            Table.Remove(entity);
+            _dbContext.SaveChanges();
+        }
+
+        public async Task DeleteAsync(TEntity entity)
+        {
+            Table.Remove(entity);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public void DeleteById(TPKey key)
+        {
+            var entity = Table.Find(key);
+            Table.Remove(entity);
+            _dbContext.SaveChanges();
+        }
+
+        public async Task DeleteByIdAsync(TPKey key)
+        {
+            var entity = await Table.FindAsync(key);
+            Table.Remove(entity);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetAll()
+        {
+            return await Table.ToListAsync();
+        }
     }
 }

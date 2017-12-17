@@ -9,7 +9,7 @@ namespace LittleArcticFox.Module.HelloWorld.Extensions
     {
         public static void HelloWorld(this ModuleOptions moduleOptions)
         {
-            Console.WriteLine("Hello World LLittle Arctic Fox");
+            Console.WriteLine("Hello World LLittle Arctic Fox,Current Datetime : " + DateTime.Now);
         }
     }
 }

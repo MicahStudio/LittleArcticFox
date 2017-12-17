@@ -28,8 +28,9 @@ namespace LittleArcticFox.Core
             ActionExecutedContext action = await next();
             action.Result = new JsonResult(new
             {
+                Success = action?.Exception == null,
                 //Code = "--------",
-                Result = (action?.Result as ObjectResult).Value,
+                Result = (action?.Result as ObjectResult)?.Value,
                 action?.Exception?.Message
             });
             //返回结果：JsonConvert.SerializeObject(result?.Result)

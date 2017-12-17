@@ -42,5 +42,10 @@ namespace LittleArcticFox.EntityFrameworkCore.Repositories
         /// <param name="entity"></param>
         /// <returns></returns>
         Task InstertAsync(TEntity entity);
+        void Delete(TEntity entity);
+        Task DeleteAsync(TEntity entity);
+        void DeleteById(TPKey key);
+        Task DeleteByIdAsync(TPKey key);
+        Task<IEnumerable<TEntity>> GetAll();
     }
 }
