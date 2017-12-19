@@ -14,11 +14,21 @@ namespace LittleArcticFox.EntityFrameworkCore.Extensions
     internal static class ModelBuilderExtension
     {
         static readonly MethodInfo SetSoftDeleteFilterMethod = typeof(ModelBuilderExtension).GetMethods(BindingFlags.Public | BindingFlags.Static).Single(t => t.IsGenericMethod && t.Name == nameof(FilterDelete));
-        public static void FilterDelete(this ModelBuilder modelBuilder, Type clrType)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="modelBuilder"></param>
+        /// <param name="clrType"></param>
+        internal static void FilterDelete(this ModelBuilder modelBuilder, Type clrType)
         {
             SetSoftDeleteFilterMethod.MakeGenericMethod(clrType).Invoke(null, new object[] { modelBuilder });
         }
-        public static void FilterDelete<TEntity>(this ModelBuilder modelBuilder) where TEntity : AuditedEntity
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TEntity"></typeparam>
+        /// <param name="modelBuilder"></param>
+        internal static void FilterDelete<TEntity>(this ModelBuilder modelBuilder) where TEntity : AuditedEntity
         {
             modelBuilder.Entity<TEntity>().HasQueryFilter(x => !x.IsDeleted);
         }

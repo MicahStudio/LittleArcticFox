@@ -6,7 +6,7 @@
     <Authors>欧俊</Authors>
     <Company>哈尔滨市百氏佳居网络科技有限公司</Company>
     <Product>小北极狐EFCore</Product>
-    <Version>1.0.0-dev</Version>
+    <Version>1.0.1-dev</Version>
     <Description>一个简单的框架，按道理，不会完善的吧。</Description>
     <PackageReleaseNotes>临时起意。
 不想负责。
@@ -16,6 +16,8 @@
 没有文档。
 嗯。</PackageReleaseNotes>
     <PackageTags>asp.netcore,webapi</PackageTags>
+    <PackageProjectUrl>https://github.com/MicahStudio/LittleArcticFox</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MicahStudio/LittleArcticFox</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -23,11 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LittleArcticFox.Core" Version="1.0.2-dev" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\LittleArcticFox.Core\LittleArcticFox.Core.csproj" />
   </ItemGroup>
 
 </Project>
